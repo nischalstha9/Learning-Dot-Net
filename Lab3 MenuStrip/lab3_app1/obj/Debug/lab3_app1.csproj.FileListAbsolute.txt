@@ -1,0 +1,13 @@
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\bin\Debug\lab3_app1.exe.config
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\bin\Debug\lab3_app1.exe
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\bin\Debug\lab3_app1.pdb
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.csproj.AssemblyReference.cache
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.csproj.SuggestedBindingRedirects.cache
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.AddStudent.resources
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.HomePage.resources
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.Properties.Resources.resources
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.csproj.GenerateResource.cache
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.csproj.CoreCompileInputs.cache
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.exe
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.pdb
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.ViewStudents.resources
