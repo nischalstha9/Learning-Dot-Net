@@ -29,7 +29,11 @@ namespace lab3_app1
 
         private void viewStudentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewStudents view = new ViewStudents();
+        }
+
+        private void trickyButtonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TrickyButton view = new TrickyButton();
             view.Show();
         }
     }

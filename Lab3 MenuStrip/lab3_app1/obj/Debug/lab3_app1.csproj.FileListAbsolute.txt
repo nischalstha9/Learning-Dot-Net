@@ -11,3 +11,4 @@ D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.csproj.CoreCompil
 D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.exe
 D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.pdb
 D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.ViewStudents.resources
+D:\Python\Dot Net\Lab3 MenuStrip\lab3_app1\obj\Debug\lab3_app1.TrickyButton.resources

@@ -33,6 +33,7 @@
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trickyButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.studentsToolStripMenuItem});
+            this.studentsToolStripMenuItem,
+            this.trickyButtonToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -78,6 +80,13 @@
             this.viewStudentsToolStripMenuItem.Text = "View Students";
             this.viewStudentsToolStripMenuItem.Click += new System.EventHandler(this.viewStudentsToolStripMenuItem_Click);
             // 
+            // trickyButtonToolStripMenuItem
+            // 
+            this.trickyButtonToolStripMenuItem.Name = "trickyButtonToolStripMenuItem";
+            this.trickyButtonToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.trickyButtonToolStripMenuItem.Text = "Tricky Button";
+            this.trickyButtonToolStripMenuItem.Click += new System.EventHandler(this.trickyButtonToolStripMenuItem_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -101,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem addStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewStudentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trickyButtonToolStripMenuItem;
     }
 }
 

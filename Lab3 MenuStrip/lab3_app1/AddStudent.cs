@@ -13,7 +13,7 @@ namespace lab3_app1
     public partial class AddStudent : Form
     {
         int index = 0;
-        Student[] students = new Student[3];
+        public Student[] students = new Student[3];
         public AddStudent()
         {
             InitializeComponent();
@@ -33,6 +33,21 @@ namespace lab3_app1
             this.students[index] = student;
             this.index++;
             MessageBox.Show("Student Inserted Success", "Success");
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            //this.Close();
+        }
+
+        private void AddStudent_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewStudents view = new ViewStudents(this.students);
+            view.Show();
         }
     }
 }

@@ -12,9 +12,17 @@ namespace lab3_app1
 {
     public partial class ViewStudents : Form
     {
-        public ViewStudents()
+        Student[] students = new Student[3];
+        public ViewStudents(Student[] students)
         {
+            this.students = students;
             InitializeComponent();
+        }
+
+
+        private void ViewStudents_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = this.students;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3_app1
 {
-    internal class Student
+    public class Student
     {
         public string Name { get; set; }
         public string Address { get; set; }
