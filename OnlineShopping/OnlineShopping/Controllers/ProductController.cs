@@ -22,6 +22,7 @@ namespace OnlineShopping.Controllers
         // GET: Product
         public async Task<IActionResult> Index()
         {
+            ViewData["CategoryId"] = new SelectList(_context.Category, "Id", "Name");
             var onlineShoppingContext = _context.Product.Include(p => p.Category);
             return View(await onlineShoppingContext.ToListAsync());
         }

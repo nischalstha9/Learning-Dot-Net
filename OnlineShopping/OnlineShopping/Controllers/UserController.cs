@@ -19,6 +19,75 @@ namespace OnlineShopping.Controllers
             _context = context;
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        //For /User/Login
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                var RegisteredUser = _context.User.ToList().Find(u => u.Email == user.Email && u.Password==user.Password);
+
+                if (RegisteredUser != null)
+                {
+                    //_context.Add(user);
+                    //await _context.SaveChangesAsync();
+                    ViewData["msgType"] = "success";
+                    ViewData["Message"] = "Successfully logged in with email "+user.Email+".";
+                    Console.WriteLine(_context);
+                }
+                else
+                {
+                    ViewData["msgType"] = "danger";
+                    ViewData["Message"] = "No user found matching given credentials.";
+                }
+            }
+            return View(user);
+        }
+
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+        //For /User/Register
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register([Bind("Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                //var anyPreviousUserExist = from u in await _context.User.ToListAsync() 
+                                           //where u.Email == user.Email select u;
+                var lambdaVersionanyPreviousUserExist = _context.User.ToList().Find(u => u.Email == user.Email);
+                
+
+                if (lambdaVersionanyPreviousUserExist != null)
+                {
+                    ViewData["msgType"] = "danger";
+                    ViewData["Message"] = "User with that email already exists.";
+                    //return View(user);
+                }
+                else
+                {
+                    _context.Add(user);
+                    await _context.SaveChangesAsync();
+                    ViewData["msgType"] = "success";
+                    ViewData["Message"] = "User Registered Successfully.";
+                    //return RedirectToAction(nameof(Index));
+                }
+                
+            }
+            return View(user);
+        }
+
         // GET: User
         public async Task<IActionResult> Index()
         {
